@@ -1,0 +1,19 @@
+{
+  "name": "form-validation",
+  "version": "1.0.0",
+  "type": "module",
+  "source": "index.ts",
+  "keywords": [],
+  "author": "Franz Sittampalam",
+  "license": "ISC",
+  "devDependencies": {
+    "microbundle": "^0.15.1",
+    "nanoid": "^4.0.0",
+    "zod": "^3.19.1"
+  },
+  "main": "index.ts",
+  "scripts": {
+    "test": "vitest"
+  },
+  "description": ""
+}
