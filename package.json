@@ -2,6 +2,7 @@
   "name": "shedali-microbundle",
   "version": "1.0.0",
   "type": "module",
+  "types": "dist/foo.d.ts",    
   "source": "index.ts",
   "keywords": [],
   "author": "Franz Sittampalam",
