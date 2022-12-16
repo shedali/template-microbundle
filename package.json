@@ -1,9 +1,7 @@
 {
-  "name": "shedali-microbundle",
+  "name": "index",
   "version": "1.0.0",
   "type": "module",
-  "types": "dist/foo.d.ts",    
-  "source": "index.ts",
   "keywords": [],
   "author": "Franz Sittampalam",
   "license": "ISC",
@@ -13,11 +11,18 @@
     "vitest": "^0.25.8",
     "zod": "^3.20.2"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "./dist/index.js",
+  "exports": {
+    "require": "./dist/index.js",
+    "default": "./dist/index.modern.mjs"
+  },
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "dev":"microbundle watch -o dist",
-    "build": "microbundle -o dist",
+    "dev":"microbundle watch -o dist/index.js",
+    "build": "microbundle -o dist/index.js",
     "test": "vitest"
   },
   "description": ""
