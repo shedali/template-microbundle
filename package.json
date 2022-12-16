@@ -6,6 +6,7 @@
   "author": "Franz Sittampalam",
   "license": "ISC",
   "devDependencies": {
+    "esbuild": "^0.16.7",
     "microbundle": "^0.15.1",
     "nanoid": "^4.0.0",
     "vitest": "^0.25.8",
@@ -21,8 +22,8 @@
   "source": "./src/index.ts",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "dev":"microbundle watch -o dist/index.js",
-    "build":"esbuild --bundle src/index.ts --outdir='dist'",
+    "dev": "microbundle watch -o dist/index.js",
+    "build": "esbuild --bundle src/index.ts --outdir='dist'",
     "build2": "microbundle -o dist/index.js",
     "test": "vitest"
   },
