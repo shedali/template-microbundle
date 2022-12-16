@@ -22,7 +22,8 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev":"microbundle watch -o dist/index.js",
-    "build": "microbundle -o dist/index.js",
+    "build":"esbuild --bundle src/index.ts --outdir='dist'",
+    "build2": "microbundle -o dist/index.js",
     "test": "vitest"
   },
   "description": ""
